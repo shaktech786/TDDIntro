@@ -38,13 +38,13 @@ public class FactorialTests {
     }
 
     @Test
-    @Ignore // Remove each @Ignore to allow the test to run
+    //@Ignore // Remove each @Ignore to allow the test to run
     public void shouldReturnSixWhenNumberIsThree(){
         assertThat(factorial.compute(3), is(6));
     }
 
     @Test(expected = IllegalArgumentException.class)
-    @Ignore // Remove each @Ignore to allow the test to run
+    //@Ignore // Remove each @Ignore to allow the test to run
     public void shouldThrowIllegalArgumentExceptionWhenNumberIsNegative(){
         factorial.compute(-1);
     }
