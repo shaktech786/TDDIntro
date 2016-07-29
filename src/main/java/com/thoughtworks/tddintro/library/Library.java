@@ -18,9 +18,11 @@ public class Library {
     }
 
     public void listBooks() {
-        for (String book : books) {
-            printStream.println(book);
-        }
+        if (books.size() > 0) {
+            for (String book : books) {
+                printStream.println(book);
+            }
+        } else printStream.println("");
     }
 
     public void welcome(DateTime date) {
